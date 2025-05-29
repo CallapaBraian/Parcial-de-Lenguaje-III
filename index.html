@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formulario de Registración</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Formulario de Registración</h1>
+    <form id="registroForm" autocomplete="off">
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" required />
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" required />
+
+      <label for="dni">DNI:</label>
+      <input type="text" id="dni" maxlength="8" required />
+
+      <label for="fecha">Fecha de Nacimiento:</label>
+      <input type="date" id="fecha" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required />
+
+      <button type="submit">Registrar</button>
+    </form>
+    <button id="preguntasBtn">Preguntas-Respuestas</button>
+    <div id="respuestasContainer" style="margin-top: 15px;">
+      <label>Sus respuestas fueron:</label>
+      <input type="text" id="respuestas" readonly />
+    </div>
+    <div id="errores"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
